@@ -1,0 +1,58 @@
+<!--
+  Generated template for the CalcPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>calc</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<table>
+  <tr>
+      <td colspan="4"><input name="txtans" [(ngModel)]="num" type="text" style="width:185px;height:89px;"></td>
+  </tr>
+    <tr>
+        <td><button ion-button color="light" medium (click)="pressedc()">c</button>
+        <td><button ion-button color="light" medium (click)="pressedBackSpace()"><ion-icon name="backspace"></ion-icon></button>
+        <td><button ion-button color="light" medium (click)="pressedDiv()">/</button>
+        <td><button ion-button color="light" medium (click)="pressedMult()">x</button>
+    </tr>
+
+    <tr>
+        <td><button ion-button color="light" medium (click)="pressed7()">7</button>
+        <td><button ion-button color="light" medium (click)="pressed8()">8</button>
+        <td><button ion-button color="light" medium (click)="pressed9()">9</button>
+        <td><button ion-button color="light" medium (click)="pressedMinus()">-</button>
+    </tr>
+
+    <tr>
+        <td><button ion-button color="light" medium (click)="pressed4()">4</button>
+        <td><button ion-button color="light" medium (click)="pressed5()">5</button>
+        <td><button ion-button color="light" medium (click)="pressed6()">6</button>
+        <td><button ion-button color="light" medium (click)="pressedplus()">+</button>
+    </tr>
+
+    <tr>
+        <td><button ion-button color="light" medium (click)="pressed1()">1</button>
+        <td><button ion-button color="light" medium (click)="pressed2()">2</button>
+        <td><button ion-button color="light" medium (click)="pressed3()">3</button>
+        <td rowspan="2"><button ion-button color="light" medium style="height:95px;" (click)="pressedEq()">=</button>
+    </tr>
+
+    <tr>
+        <td><button ion-button color="light" medium (click)="pressedPrc()">%</button>
+        <td><button ion-button color="light" medium (click)="pressed0()">0</button>
+        <td><button ion-button color="light" medium (click)="pressedDot()">.</button>
+    </tr>
+    
+
+</table>
+
+</ion-content>
